@@ -1,3 +1,5 @@
+# Install Terraform version 1.1.5
+
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 
 wget -O- https://apt.releases.hashicorp.com/gpg | \
@@ -15,3 +17,11 @@ sudo tee /etc/apt/sources.list.d/hashicorp.list
 sudo apt update
 
 sudo apt-get install terraform=1.1.5
+
+cp ~/terraform-challenges/challenge-1/main.tf ~/terraform_challenge/
+
+cp ~/terraform-challenges/challenge-1/provider.tf ~/terraform_challenge/
+
+cd ~/terraform_challenge/
+terraform init
+terraform apply
