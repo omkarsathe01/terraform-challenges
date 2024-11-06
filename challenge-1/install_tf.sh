@@ -24,4 +24,4 @@ cp ~/terraform-challenges/challenge-1/provider.tf ~/terraform_challenge/
 
 cd ~/terraform_challenge/
 terraform init
-terraform apply
+terraform apply -auto-approve
